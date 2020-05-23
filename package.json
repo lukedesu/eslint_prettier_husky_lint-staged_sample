@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lerna": "^3.21.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lerna run --concurrency 1 --stream precommit --since HEAD --exclude-dependents"
+    }
+  }
+}
