@@ -1,5 +1,5 @@
 {
-  "name": "husky_sample_repo",
+  "name": "eslint_prettier_husky_lint-staged_sample",
   "scripts": {
     "lint": "eslint '**/*.js'",
     "lint:fix": "npm run lint -- --fix"
