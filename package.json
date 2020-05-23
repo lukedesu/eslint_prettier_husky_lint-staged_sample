@@ -12,9 +12,6 @@
   "lint-staged": {
     "*.js": [
       "npm run lint:fix"
-    ],
-    "*.{js,scss,json,md}": [
-      "prettier --write"
     ]
   },
   "dependencies": {
