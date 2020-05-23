@@ -1,9 +1,7 @@
 {
   "name": "husky_sample_repo",
   "scripts": {
-    "start": "node src/index.js",
-    "lint": "eslint src/**/*.js",
-    "lint:fix": "prettier src/**/*.{scss,js} --write"
+    "start": "node src/index.js"
   },
   "husky": {
     "hooks": {
@@ -11,8 +9,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,scss}": [
-      "npm run lint:fix"
+    ".js": [
+      "eslint --fix",
+      "git add"
+    ],
+    ".{js,json,md}": [
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {
