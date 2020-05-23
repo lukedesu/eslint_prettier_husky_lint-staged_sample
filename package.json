@@ -11,8 +11,12 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "npm run lint:fix"
+    ".js": [
+      "eslint --fix"
+    ],
+    ".{js,json,md}": [
+      "prettier --write",
+      "git add"
     ]
   },
   "dependencies": {
