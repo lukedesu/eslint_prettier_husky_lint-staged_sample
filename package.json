@@ -13,8 +13,7 @@
       "eslint --fix"
     ],
     ".{js,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "dependencies": {
