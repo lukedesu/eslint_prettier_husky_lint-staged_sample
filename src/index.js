@@ -1,11 +1,5 @@
-var something = 2020
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
 
-console.log('123')
-
-const test = (a) => {
-  console.log(something)
-
-  return 'hello' + 'sss' + a
-}
-
-test(123)
+ReactDOM.render(<App />, document.getElementById('root'))
