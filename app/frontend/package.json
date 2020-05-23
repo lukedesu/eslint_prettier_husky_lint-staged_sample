@@ -2,12 +2,8 @@
   "name": "eslint_prettier_husky_lint-staged_sample_frontend",
   "scripts": {
     "lint": "eslint '**/*.js'",
-    "lint:fix": "npm run lint -- --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "lint:fix": "npm run lint -- --fix",
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
