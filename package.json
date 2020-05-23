@@ -11,7 +11,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,scss}": [
+    "*.{js,scss,json}": [
       "npm run lint:fix"
     ]
   },
