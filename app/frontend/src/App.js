@@ -3,5 +3,5 @@ import React from 'react'
 
 export default function App({ a }) {
 
-  return <>Hello App</>
+  return <>Hello App</>;
 }
