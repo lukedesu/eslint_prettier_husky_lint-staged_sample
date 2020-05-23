@@ -13,7 +13,7 @@
     }
   },
   "lint-staged": {
-    "*.js": ["npm run lint:fix", "git add"]
+    "*.{js,scss}": ["npm run lint:fix"]
   },
   "keywords": [],
   "author": "",
