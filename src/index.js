@@ -5,8 +5,7 @@ console.log('123')
 const test = (a) => {
   console.log(something)
 
-  return 'hello' + 'sss' +
-   a
+  return 'hello' + 'sss' + a
 }
 
 test(123)
