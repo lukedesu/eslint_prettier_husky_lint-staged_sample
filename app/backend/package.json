@@ -5,6 +5,11 @@
     "lint:fix": "npm run lint -- --fix",
     "precommit": "lint-staged"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.js": [
       "npm run lint:fix"
@@ -24,6 +29,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5"
   }
