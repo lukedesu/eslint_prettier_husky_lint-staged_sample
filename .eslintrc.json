@@ -6,7 +6,10 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "standard"
+        "standard",
+        "prettier",
+        "plugin:prettier/recommended",
+        "prettier/react"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -19,14 +22,12 @@
         "ecmaVersion": 11,
         "sourceType": "module"
     },
-    "plugins": [
-        "react"
-    ],
     "settings": {
       "react": {
-        "version": "16.11.0"
+        "version": "latest"
       }
     },
+    "ignorePatterns": ["package.json", "**/dist/*.js"],
     "rules": {
     }
 }
