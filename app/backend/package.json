@@ -1,8 +1,6 @@
 {
   "name": "eslint_prettier_husky_lint-staged_sample_backend",
   "scripts": {
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "npm run lint -- --fix",
     "precommit": "lint-staged"
   },
   "husky": {
@@ -11,9 +9,7 @@
     }
   },
   "lint-staged": {
-    "*.js": [
-      "npm run lint:fix"
-    ],
+    "*.js": "eslint --fix",
     "*.{js,jsx,ts,tsx,md,html,css,scss,json}": "prettier --write"
   },
   "dependencies": {

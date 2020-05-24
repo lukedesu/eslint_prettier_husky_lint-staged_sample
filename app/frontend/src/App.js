@@ -1,9 +1,6 @@
 import './style.scss'
-import React from 'react';
+import React from 'react'
 
-
-export default function App({ b }) {
-
+export default function App() {
   return <>Hello App</>
-
 }
